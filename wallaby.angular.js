@@ -42,7 +42,7 @@ module.exports = function () {
         ],
         tests: [
             {
-                pattern: 'www/test/*.spec.ts'
+                pattern: 'test/*.spec.ts'
             }
         ]
     };
