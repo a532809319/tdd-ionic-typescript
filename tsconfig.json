@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "allowNonTsExtensions": true,
+        "module": "commonjs",
+        "sourceMap": true,
+        "isolatedModules": true,
+        "noEmitOnError": false,
+        "rootDir": ".",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true
+    },
+    "files": [
+        "./www/js/app.ts",
+        "./www/js/controllers.ts",
+        "./www/js/directives.ts",
+        "./www/js/routes.ts",
+        "./www/js/services.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

@@ -1,0 +1,17 @@
+<ion-view title="{{addCtrl.title}}" id="page2" class=" ">
+    <ion-content padding="true" class="has-header">
+        <form id="compartir-form3" class="list ">
+            <label class="item item-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="search" placeholder="{{addCtrl.placeholder_search}}">
+            </label>
+            <ion-item class="item-thumbnail-left" id="compartir-list-item23">
+                <h2 ng-bind="addCtrl.title"></h2>
+                <p ng-bind="addCtrl.data"></p>
+            </ion-item>
+        </form>
+        <a ui-sref="tabsController.comparte" id="compartir-button7"
+          ng-bind="addCtrl.btn_share" class=" button button-positive  button-block" 
+          ng-class="addCtrl.icon_share"></a>
+    </ion-content>
+</ion-view>

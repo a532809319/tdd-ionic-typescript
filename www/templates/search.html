@@ -1,0 +1,24 @@
+<ion-view ng-init="searchCtrl.jamon = true" 
+                        ng-show="searchCtrl.jamon" 
+                        ng-click="searchCtrl.jamon = !searchCtrl.jamon" 
+                        class="fx-fade-right fx-speed-2000"
+                        title="{{searchCtrl.title}}" id="page3" >
+    <ion-content padding="true" class="has-header">
+        <form id="buscar-form1" class="list ">
+            <label class="item item-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="search" placeholder="{{searchCtrl.placeholder_search}}">
+            </label>
+            <ion-toggle ng-checked="searchCtrl.switch_my_items" 
+                        toggle-class="toggle-positive" id="buscar-toggle1">
+                {{ searchCtrl.my_items }}
+            </ion-toggle>
+            <ion-item ng-bind="searchCtrl.kinds"
+                    class="item-divider " id="buscar-list-item-divider1"></ion-item>
+            <ion-item
+                    ng-repeat="it in searchCtrl.items" class="item-avatar  " id="buscar-list-item8">
+                <h2 ng-bind="it"></h2>
+            </ion-item>
+        </form>
+    </ion-content>
+</ion-view>
