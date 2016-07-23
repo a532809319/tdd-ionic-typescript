@@ -1,0 +1,20 @@
+global dependencies:
+
+$ npm install ionic --global
+$ npm install typescript --global
+$ npm install typings --global
+
+dependencies:
+
+$ npm install
+$ typings install
+$ bower install
+
+compiling:
+
+$ gulp compile-ts
+$ gulp watch
+
+development run:
+
+$ ionic serve
